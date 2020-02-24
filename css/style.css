@@ -1,4 +1,63 @@
 body {
-  background-color: #dadada;
+  background-color: #ffffff;
   font-size: 10px;
+  display: block;
+  float: inherit;
+  margin: 0 auto;
+}
+
+div {
+  background-color: #dadada;
+  width: 50%;
+  height: 300px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+}
+
+img {
+  min-width: 300px;
+  min-height: 300px;  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: #000;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+div > h1 {
+  font-family: serif;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #000;
+}
+
+/* this is for tablets */
+@media screen and (min-width: 575px) {
+  }
+}
+
+/* this is for laptops */
+@media screen and (min-width: 991px) {
+  }
 }
