@@ -1,9 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-size: 10px;
-  display: block;
-  float: inherit;
-  margin: 0 auto;
 }
 
 div {
@@ -15,23 +16,29 @@ div {
 }
 
 .container {
-  width: 70%;
-  display: block;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0px;
-  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* white-space: nowrap; */
 }
 
 img {
-  min-width: 300px;
-  min-height: 300px;  
+  object-fit: cover;
+  width: 100%;
+  page-break-inside: avoid;  
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+.preview {
+  display: inline-block;
+  width: 100%;
+
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 h1 {
@@ -54,10 +61,15 @@ div > h1 {
 
 /* this is for tablets */
 @media screen and (min-width: 575px) {
+  .preview{
+    width: 49%;
   }
 }
 
 /* this is for laptops */
 @media screen and (min-width: 991px) {
+  .preview{
+    float: left;
+    width: 25%;
   }
 }
